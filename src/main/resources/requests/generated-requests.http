@@ -1,0 +1,70 @@
+###
+GET http://localhost:8080/
+
+<> 2021-12-03T210515.404.json
+<> 2021-12-03T210437.404.json
+
+###
+GET http://localhost:8080/
+
+###
+GET http://localhost:8080/
+
+###
+GET http://localhost:8081/
+
+###
+POST http://localhost:8081/restart
+
+###
+POST http://localhost:8081/bookstore/createBookStore?id=3&name=tom&books=book1,book2
+
+###
+
+# curl --location --request POST 'http://localhost:8081/bookstore/createBookStore'
+#--header 'Content-Type: application/x-www-form-urlencoded'
+#--data-urlencode 'id=2'
+#--data-urlencode 'name=shop'
+#--data-urlencode 'books=book1'
+POST http://localhost:8081/bookstore/createBookStore
+Content-Type: application/x-www-form-urlencoded
+
+id=2&name=shop&books=book1
+
+###
+
+
+
+###
+POST http://localhost:8081/bookstore/createBookStore
+<> request.json
+
+
+###
+GET http://localhost:8081/bookstore/getBookStores
+
+###
+GET http://localhost:8081/bookstore/getBookStoreById
+
+###
+GET http://localhost:8081/bookstore/getBookStoreWhichHasParticularBooks
+
+###
+GET http://localhost:8081/bookstore/getBookStoresInPagedFormat
+
+###
+GET http://localhost:8081/bookstore/countBookStores
+
+###
+GET http://localhost:8081/bookstore/bookstoreExistById
+
+###
+PUT http://localhost:8081/bookstore/updateBookStoreName
+
+###
+DELETE http://localhost:8081/bookstore/deleteBookStoreById
+
+###
+DELETE http://localhost:8081/bookstore/truncateBookStore
+
+
